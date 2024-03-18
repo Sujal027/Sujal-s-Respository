@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Converter</title>
+
+
+</head>
+<body>
+    <h2>CONVERTERS</h2>
+    <BR>
+        <button onclick = "f1()">decimal to binary</button>
+        <br>
+        <p id = "1"></p>
+        <br>
+        <button onclick = "f2()">decimal to octal</button>
+        <p id = "2"></p>
+        <br>
+        <button onclick = "f3()">decimal to hexadecimal</button>
+        <br>
+        <p id ="3"></p>        
+       <script>
+       function f1()
+        {
+            let x= Number.parseInt(prompt("enter the number"));
+            let s = "";
+            while( x != 1)
+            {
+                s =  x%2+s;
+                x = x / 2;
+            }
+            document.getElementById("1") = s;
+
+        }
+        function f2()
+        {
+            let x= Number.parseInt(prompt("enter the number"));
+            let s = "";
+            while( x != 1)
+            {
+                s =  x%8 +s;
+                x = x / 8;
+            }
+            document.getElementById("2") = s;
+            
+        }
+        function f3()
+        {
+            let x= Number.parseInt(prompt("enter the number"));
+            let s = "";
+            while( x != 1)
+            {
+                s =  x%16 +s;
+                x = x / 16;
+            }
+            document.getElementById("3") = s;
+        }
+       </script>
+
+        
+</body>

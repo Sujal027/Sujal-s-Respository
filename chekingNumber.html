@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>checkingNumber</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body {
+                background-attachment: fixed;
+                background-color: royalblue;
+                border-bottom-right-radius: 0%;
+
+            }
+            .me {
+                background-color: bisque;
+            }
+            </style>
+    </head>
+    <body id ="us">
+        <input type="color" id = "we" onchange="fun()">
+        <br>
+        <h2> this is website is to check number for various purposes</h2>
+        <br>
+        <br>
+        <button id = "demo1" onclick = "f1()">enter a number</button>
+        <br>
+        <br>
+        <button id = "demo2" onclick = "f2()">check for prime</button>
+        <br>
+        <br>
+        <button id = "demo3" onclick = "f3()">check for pallindrome</button>
+        <br>
+        <br>
+        <h3>
+            OUTPUT
+            <br>
+            <p id = "demo4" class = "me"></p>
+        </h3>
+        
+        <script>
+            let a;
+            function f1()
+            {
+                a = parseInt(prompt("enter a number"));
+}
+function fun()
+{
+    let colour = document.getElementById("we");
+    document.getElementById("us").style.background.colour = colour.value;
+
+}
+function f2()
+{
+let c = 0 ;
+for(let i = 1 ; i <= a ; i++)
+{
+    if(a%i == 0)
+    {
+        c++;
+    }
+}
+if(c == 2)
+{
+document.getElementById("demo4").innerHTML = `number is prime`;
+}
+else
+{
+    document.getElementById("demo4").innerHTML =`number is not prime`;
+}
+}
+function f3()
+{
+    let rev = 0 ;
+    let b = a ;
+    while(b!= 0)
+    {
+        let x = b%10;
+      rev = rev * 10 + x;
+      b = b/10;
+    }
+    if(a == rev)
+    {
+        document.getElementById("demo4").innerHTML = `number is pallindrome`; 
+    }
+    else{
+        document.getElementById("demo4").innerHTML = `number is not pallindrome`;
+    }
+}
+        </script>
+
+
+    </body>
+</html>

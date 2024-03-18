@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Blank template</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+<body><div>
+    <h1>my page</h1>
+</div>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+    <br>
+    <h2>check whether the given word is present in the given sentence or not</h2>
+    <br>
+    <button onclick= "function1()" id = "demo1">enter the sentence</button>
+    <br>
+    <p id = "demo2"></p>
+    <p id = "demo3"></p>
+
+    <script>
+        function function1()
+        {
+            let m ;
+           if( document.getElementById("demo1").innerHTML == "enter the word")
+           {
+            document.getElementById("demo1").innerHTML = "enter the word";
+            m = prompt("enter the word");
+            if( document.getElementById("demo2").innerHTML.indexOf(m) >= 0)
+            {
+                document.getElementById("demo3").innerHTML = "yes";
+            }
+            else{
+                document.getElementById("demo3").innerHTML = "no";
+            }
+           }
+           if( document.getElementById("demo1").innerHTML == "enter the sentence")
+           {
+            document.getElementById("demo1").innerHTML = "enter the sentence";
+            document.getElementById("demo2").innerHTML = prompt("enter the sentence");
+           }
+
+        }
+    </script>
+
+</body>
+
+</html>

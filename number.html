@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Blank template</title>
+
+  <style>
+p{
+    background-color: aqua;
+
+}
+p {
+    color: blueviolet;
+}
+body{
+
+    background-color : pink;
+}
+#demo4
+{
+    background-color: aqua;
+}
+
+  </style>
+
+</head>
+
+<body>
+    <fieldset  id = "demo4">
+    <button onclick = "f1()">show me the result of direct addition</button>
+  
+    <p id = "23">
+
+
+    </p>
+    <br>
+    <button onclick="f2()">show me the result of indirect addition</button>
+    <br>
+    <p id = "45"></p>
+
+    </fieldset>
+    </p>
+    <br>
+    <button onclick = "f3()">result of NaN</button>
+    <br>
+    <p id = "NaN"></p>
+    <script>
+        let a = 0.3 + 0.4;
+        let b = (0.3*10+0.4*10)/10;
+        let c = 3 / "me";
+        function f1(){
+            document.getElementById("23").innerHTML = `the result of direct addition is ${a} `;
+        }
+        function f2(){
+            document.getElementById("45").innerHTML = `the result of indirect addition is ${b}`;
+        }
+        function f3()
+        {
+            document.getElementById("NaN").innerHTML = `the result of nan operation is ${c}`;
+        }
+   
+      
+    </script>
+    </body>

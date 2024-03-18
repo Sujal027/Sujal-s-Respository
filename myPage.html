@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Blank template</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body{
+                background-color: chartreuse;
+            }
+            p{
+                background-color: blueviolet;
+            }
+        </style>
+
+    </head>
+
+    <body>
+     
+      <p id = "demo">  My awesome space</p>
+      <br>
+     </button>
+      <button onclick = "hello2()">enter details</button>
+	<br>
+	<p id = "demo2"></p>
+	<button onclick = "f3()">on</button> <button onclick = "f4()">off </button>
+        
+        <!-- Load external JavaScript -->
+  
+         <script>
+            function hello2()
+            {
+               alert("enter your details");
+               let  name= prompt("enter your name");
+               let age= prompt("enter your age");
+               let nationality = prompt("enter your nationality");
+               let html = `<ul><li>name is ${name}</li><li>age is ${age}</li><li>naionality is ${nationality}</li>`
+               document.getElementById("demo").innerHTML = html;
+            }
+	function f3()
+	{
+	document.getElementById("demo2").innerHTML = `<image src = "/on bulb.jpg" ></image>`
+	
+
+	}
+	function f4()
+	{
+	document.getElementById("demo2").innerHTML = `<img src = "/off bulb.jpg"" >`
+	
+
+	}
+	
+         </script>
+    </body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Blank template</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body{
+                background-color: grey;
+            }
+            p{
+               background-color: white;
+               color:black;
+            }
+        </style>
+        </head>
+        <body>
+            <p id = "demo1"></p>
+            <br>
+            <div id = "demo2"></div>
+            <button onclick = "func1()">who is hitesh</button>
+            <button onclick = "func2()">display image</button>
+            <script>
+                function func1()
+                {
+                    document.getElementById("demo1").innerHTML = "hitesh is a gentleman and an electronics and instrumentaion engineer";
+                }
+                
+                function func2()
+                {
+                    document.getElementById("demo2").innerHTML = `<image src = "/Screenshot (48).png" height = "100" width = "100"></image>`;
+                }
+
+            </script>
+
+        </body>
+</html>
